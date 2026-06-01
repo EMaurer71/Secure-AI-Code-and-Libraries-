@@ -1,0 +1,75 @@
+name: Security Scan
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install security tools
+      run: |
+        pip install bandit semgrep safety
+
+    # -----------------------------
+    # BANDIT
+    # -----------------------------
+    - name: Run Bandit
+      run: |
+        bandit -r . -x venv -f json -o bandit.json
+
+    - name: Upload Bandit Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: bandit-report
+        path: bandit.json
+
+    # -----------------------------
+    # SEMGREP
+    # -----------------------------
+    - name: Run Semgrep
+      run: |
+        semgrep --config auto . --json --output semgrep.json
+
+    - name: Upload Semgrep Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: semgrep-report
+        path: semgrep.json
+
+    # -----------------------------
+    # SAFETY (dependency scan)
+    # -----------------------------
+    - name: Run Safety
+      run: |
+        safety check --json > safety.json
+
+    - name: Upload Safety Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: safety-report
+        path: safety.json
+
+    # -----------------------------
+    # FAIL PR IF HIGH SEVERITY FOUND
+    # -----------------------------
+    - name: Fail on HIGH severity Bandit issues
+      run: |
+        HIGH_COUNT=$(jq '[.results[] | select(.issue_severity=="HIGH")] | length' bandit.json)
+        if [ "$HIGH_COUNT" -gt 0 ]; then
+          echo "❌ HIGH severity issues found: $HIGH_COUNT"
+          exit 1
+        else
+          echo "✅ No HIGH severity issues found"
+        fi
+
