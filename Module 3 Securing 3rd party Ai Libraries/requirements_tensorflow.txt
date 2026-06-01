@@ -1,0 +1,9 @@
+# TensorFlow ML Stack
+tensorflow==2.5.0
+numpy==1.19.5
+pillow==8.1.0
+matplotlib==3.3.4
+pandas==1.2.0
+scipy==1.6.0
+h5py==2.10.0
+urllib3==1.26.4
