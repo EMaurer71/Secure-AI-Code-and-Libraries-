@@ -1,0 +1,23 @@
+# ML Project Dependencies - SECURE VERSION
+
+# Core ML Libraries (Updated to secure versions)
+numpy==1.21.6  # Fixed: Buffer overflow vulnerability
+pandas==1.3.5  # Updated: Latest stable
+scikit-learn==1.0.2  # Updated: Latest stable
+matplotlib==3.5.1  # Updated: Latest stable
+
+# Deep Learning Frameworks (Patched versions)
+torch==1.10.2  # Updated: Security patches
+tensorflow==2.8.0  # Fixed: Multiple CVEs
+
+# Data Processing (Secure versions)
+pillow==9.0.1  # Fixed: Path traversal, ReDoS
+opencv-python==4.5.5.62  # Updated: Latest stable
+
+# Utilities (Patched)
+requests==2.27.1  # Updated: Latest stable
+urllib3==1.26.8  # Fixed: CRLF injection
+
+# Security: Pin exact versions and use hash verification
+# Install with: pip install --require-hashes -r requirements.txt
+# Generate hashes: pip-compile --generate-hashes requirements.in

@@ -1,0 +1,30 @@
+{
+  "vulnerability_scanning": {
+    "tools": [
+      "pip-audit",
+      "safety"
+    ],
+    "fail_on": [
+      "CRITICAL",
+      "HIGH"
+    ],
+    "allow_exceptions": false
+  },
+  "license_scanning": {
+    "tool": "pip-licenses",
+    "blocked_licenses": [
+      "GPL-3.0",
+      "AGPL-3.0"
+    ],
+    "fail_on_unknown": true
+  },
+  "dependency_approval": {
+    "check_against": "approved_packages.json",
+    "fail_on_unapproved": true
+  },
+  "sbom_generation": {
+    "required": true,
+    "format": "CycloneDX",
+    "upload_to": "sbom-repository"
+  }
+}
