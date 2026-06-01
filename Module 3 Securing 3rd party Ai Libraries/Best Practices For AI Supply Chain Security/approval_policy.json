@@ -1,0 +1,62 @@
+{
+  "rules": [
+    {
+      "category": "ml-frameworks",
+      "packages": [
+        "torch",
+        "tensorflow",
+        "jax"
+      ],
+      "requires": "security-review",
+      "reason": "Core ML frameworks have high impact"
+    },
+    {
+      "category": "restrictive-licenses",
+      "licenses": [
+        "GPL-3.0",
+        "AGPL-3.0"
+      ],
+      "requires": "legal-review",
+      "reason": "May conflict with commercial use"
+    },
+    {
+      "category": "new-publishers",
+      "criteria": "package_age < 90 days OR publisher_reputation < 3/5",
+      "requires": "security-review",
+      "reason": "Unknown packages need vetting"
+    },
+    {
+      "category": "high-risk-categories",
+      "package_types": [
+        "crypto",
+        "network",
+        "subprocess"
+      ],
+      "requires": "security-review",
+      "reason": "High-risk functionality"
+    }
+  ],
+  "approval_process": {
+    "security-review": {
+      "reviewers": [
+        "security-team@company.com"
+      ],
+      "sla_days": 5,
+      "checks": [
+        "CVE scan",
+        "Source code review",
+        "Maintainer reputation"
+      ]
+    },
+    "legal-review": {
+      "reviewers": [
+        "legal-team@company.com"
+      ],
+      "sla_days": 3,
+      "checks": [
+        "License compatibility",
+        "IP concerns"
+      ]
+    }
+  }
+}
