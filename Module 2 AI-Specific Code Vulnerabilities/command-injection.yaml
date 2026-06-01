@@ -1,0 +1,13 @@
+rules:
+  - id: os-system-fstring
+    pattern: os.system(f"...{$ARG}...")
+    message: "os.system() with f-string user input"
+    languages: [python]
+    severity: ERROR
+
+  - id: subprocess-shell-true
+    pattern: subprocess.run($CMD, shell=True, ...)
+    message: "subprocess.run(..., shell=True)"
+    languages: [python]
+    severity: WARNING
+
