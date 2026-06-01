@@ -1,0 +1,32 @@
+# Core Python scientific stack
+numpy
+pandas
+scikit-learn
+matplotlib
+scipy
+joblib
+
+# ML frameworks used in examples
+tensorflow==2.13.0
+torch
+torchvision
+
+# Web + utilities
+flask
+werkzeug
+requests
+
+# Security tools (Module 1 + 2)
+bandit
+semgrep
+pip-audit
+safety
+pip-licenses
+
+# SBOM + supply chain tools (Module 3)
+cyclonedx-bom
+pip-tools
+
+# Jupyter + notebook support
+jupyter
+ipykernel
