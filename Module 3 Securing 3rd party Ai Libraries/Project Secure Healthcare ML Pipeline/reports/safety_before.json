@@ -1,0 +1,381 @@
+
+
++===========================================================================================================================================================================================+
+
+
+DEPRECATED: this command (`check`) has been DEPRECATED, and will be unsupported beyond 01 June 2024.
+
+
+We highly encourage switching to the new `scan` command which is easier to use, more powerful, and can be set up to mimic the deprecated command if required.
+
+
++===========================================================================================================================================================================================+
+
+
+{
+    "report_meta": {
+        "scan_target": "files",
+        "scanned": [
+            "requirements_vuln.txt"
+        ],
+        "scanned_full_path": [
+            "/workspaces/Secure-AI-Code-and-Libraries-/Module 3 Securing 3rd party Ai Libraries/Project Secure Healthcare ML Pipeline/requirements_vuln.txt"
+        ],
+        "target_languages": [
+            "python"
+        ],
+        "policy_file": null,
+        "policy_file_source": "local",
+        "audit_and_monitor": false,
+        "api_key": false,
+        "account": "",
+        "local_database_path": null,
+        "safety_version": "3.8.1",
+        "timestamp": "2026-06-03 20:20:20",
+        "packages_found": 2,
+        "vulnerabilities_found": 4,
+        "vulnerabilities_ignored": 0,
+        "remediations_recommended": 0,
+        "telemetry": {
+            "safety_options": {
+                "files": {
+                    "-r": 1
+                },
+                "json": {
+                    "--json": 1
+                }
+            },
+            "safety_version": "3.8.1",
+            "safety_source": "cli",
+            "os_type": "Linux",
+            "os_release": "6.8.0-1052-azure",
+            "os_description": "Linux-6.8.0-1052-azure-x86_64-with-glibc2.39",
+            "python_version": "3.12.1",
+            "safety_command": "check"
+        },
+        "git": {
+            "branch": "main",
+            "tag": "",
+            "commit": "53918f2960b8a37e780fb10cdb29de95df21acc4",
+            "dirty": "True",
+            "origin": "https://github.com/EMaurer71/Secure-AI-Code-and-Libraries-"
+        },
+        "project": null,
+        "json_version": "1.1",
+        "remediations_attempted": 0,
+        "remediations_completed": 0,
+        "remediation_mode": "NON_INTERACTIVE"
+    },
+    "scanned_packages": {
+        "pandas": {
+            "name": "pandas",
+            "version": "1.1.5",
+            "requirements": [
+                {
+                    "raw": "pandas==1.1.5",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pandas",
+                    "specifier": "==1.1.5",
+                    "url": null,
+                    "found": "/workspaces/Secure-AI-Code-and-Libraries-/Module 3 Securing 3rd party Ai Libraries/Project Secure Healthcare ML Pipeline/requirements_vuln.txt"
+                }
+            ]
+        },
+        "scikit-learn": {
+            "name": "scikit-learn",
+            "version": "0.20.0",
+            "requirements": [
+                {
+                    "raw": "scikit-learn==0.20.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "scikit-learn",
+                    "specifier": "==0.20.0",
+                    "url": null,
+                    "found": "/workspaces/Secure-AI-Code-and-Libraries-/Module 3 Securing 3rd party Ai Libraries/Project Secure Healthcare ML Pipeline/requirements_vuln.txt"
+                }
+            ]
+        }
+    },
+    "affected_packages": {
+        "scikit-learn": {
+            "name": "scikit-learn",
+            "version": "0.20.0",
+            "requirements": [
+                {
+                    "raw": "scikit-learn==0.20.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "scikit-learn",
+                    "specifier": "==0.20.0",
+                    "url": null,
+                    "found": "/workspaces/Secure-AI-Code-and-Libraries-/Module 3 Securing 3rd party Ai Libraries/Project Secure Healthcare ML Pipeline/requirements_vuln.txt"
+                }
+            ],
+            "found": null,
+            "insecure_versions": [
+                "0.9",
+                "0.10",
+                "0.11",
+                "0.12",
+                "0.12.1",
+                "0.13",
+                "0.13.1",
+                "0.14",
+                "0.14.1",
+                "0.15.0",
+                "0.15.1",
+                "0.15.2",
+                "0.16.0",
+                "0.16.1",
+                "0.17",
+                "0.17.1",
+                "0.18",
+                "0.18.1",
+                "0.18.2",
+                "0.19.0",
+                "0.19.1",
+                "0.19.2",
+                "0.20.0",
+                "0.20.1",
+                "0.20.2",
+                "0.20.3",
+                "0.20.4",
+                "0.21.0",
+                "0.21.1",
+                "0.21.2",
+                "0.21.3",
+                "0.22",
+                "0.22.1",
+                "0.22.2",
+                "0.22.2.post1",
+                "0.23.0",
+                "0.23.1",
+                "0.23.2",
+                "0.24.0",
+                "0.24.1",
+                "0.24.2",
+                "1.0",
+                "1.0.1",
+                "1.0.2",
+                "1.1.0",
+                "1.1.1",
+                "1.1.2",
+                "1.1.3",
+                "1.2.0rc1",
+                "1.2.0",
+                "1.2.1",
+                "1.2.2",
+                "1.3.0rc1",
+                "1.3.0",
+                "1.3.1",
+                "1.3.2",
+                "1.4.0rc1",
+                "1.4.0",
+                "1.4.1.post1",
+                "1.4.2",
+                "1.5.0rc1"
+            ],
+            "secure_versions": [
+                "1.9.0",
+                "1.9.0rc1",
+                "1.8.0",
+                "1.8.0rc1",
+                "1.7.2",
+                "1.7.1",
+                "1.7.0",
+                "1.7.0rc1",
+                "1.6.1",
+                "1.6.0",
+                "1.6.0rc1",
+                "1.5.2",
+                "1.5.1",
+                "1.5.0"
+            ],
+            "latest_version_without_known_vulnerabilities": "1.9.0",
+            "latest_version": "1.9.0",
+            "more_info_url": "https://getsafety.com/p/pypi/scikit-learn/97c/"
+        }
+    },
+    "announcements": [],
+    "vulnerabilities": [
+        {
+            "vulnerability_id": "SFTY-20220524-46487",
+            "package_name": "scikit-learn",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<=0.23.0"
+            ],
+            "all_vulnerable_specs": [
+                "<=0.23.0"
+            ],
+            "analyzed_version": "0.20.0",
+            "analyzed_requirement": {
+                "raw": "scikit-learn==0.20.0",
+                "extras": [],
+                "marker": null,
+                "name": "scikit-learn",
+                "specifier": "==0.20.0",
+                "url": null,
+                "found": "/workspaces/Secure-AI-Code-and-Libraries-/Module 3 Securing 3rd party Ai Libraries/Project Secure Healthcare ML Pipeline/requirements_vuln.txt"
+            },
+            "advisory": "scikit-learn (aka sklearn) through 0.23.0 can unserialize and execute commands from an untrusted file that is passed to the `joblib.load()` function, if `__reduce__` makes an `os.system call`.\nNOTE: third parties dispute this issue because the joblib.load() function is documented as unsafe and it is the user's responsibility to use the function in a secure manner.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2020-13092",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://getsafety.com/v/SFTY-20220524-46487/97c"
+        },
+        {
+            "vulnerability_id": "52255",
+            "package_name": "scikit-learn",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<0.24.2"
+            ],
+            "all_vulnerable_specs": [
+                "<0.24.2"
+            ],
+            "analyzed_version": "0.20.0",
+            "analyzed_requirement": {
+                "raw": "scikit-learn==0.20.0",
+                "extras": [],
+                "marker": null,
+                "name": "scikit-learn",
+                "specifier": "==0.20.0",
+                "url": null,
+                "found": "/workspaces/Secure-AI-Code-and-Libraries-/Module 3 Securing 3rd party Ai Libraries/Project Secure Healthcare ML Pipeline/requirements_vuln.txt"
+            },
+            "advisory": "Scikit-learn 0.24.2 includes a fix for a ReDoS vulnerability.\r\nhttps://github.com/scikit-learn/scikit-learn/issues/19522",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": null,
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://getsafety.com/v/52255/97c"
+        },
+        {
+            "vulnerability_id": "54297",
+            "package_name": "scikit-learn",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                ">=0.11,<1.1.0rc1"
+            ],
+            "all_vulnerable_specs": [
+                ">=0.11,<1.1.0rc1"
+            ],
+            "analyzed_version": "0.20.0",
+            "analyzed_requirement": {
+                "raw": "scikit-learn==0.20.0",
+                "extras": [],
+                "marker": null,
+                "name": "scikit-learn",
+                "specifier": "==0.20.0",
+                "url": null,
+                "found": "/workspaces/Secure-AI-Code-and-Libraries-/Module 3 Securing 3rd party Ai Libraries/Project Secure Healthcare ML Pipeline/requirements_vuln.txt"
+            },
+            "advisory": "* Disputed * Scikit-learn 1.1.0rc1 includes a fix for CVE-2020-28975: svm_predict_values in svm.cpp in Libsvm v324, as used in scikit-learn and other products, allows attackers to cause a denial of service (segmentation fault) via a crafted model SVM (introduced via pickle, json, or any other model permanence standard) with a large value in the _n_support array. \r\nNOTE: the scikit-learn vendor's position is that the behavior can only occur if the library's API is violated by an application that changes a private attribute.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2020-28975",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://getsafety.com/v/54297/97c"
+        },
+        {
+            "vulnerability_id": "71596",
+            "package_name": "scikit-learn",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<1.5.0"
+            ],
+            "all_vulnerable_specs": [
+                "<1.5.0"
+            ],
+            "analyzed_version": "0.20.0",
+            "analyzed_requirement": {
+                "raw": "scikit-learn==0.20.0",
+                "extras": [],
+                "marker": null,
+                "name": "scikit-learn",
+                "specifier": "==0.20.0",
+                "url": null,
+                "found": "/workspaces/Secure-AI-Code-and-Libraries-/Module 3 Securing 3rd party Ai Libraries/Project Secure Healthcare ML Pipeline/requirements_vuln.txt"
+            },
+            "advisory": "A sensitive data leakage vulnerability was identified in affected versions of scikit-learn TfidfVectorizer. The vulnerability arises from the unexpected storage of all tokens present in the training data within the `stop_words_` attribute, rather than only storing the subset of tokens required for the TF-IDF technique to function. This behavior leads to the potential leakage of sensitive information, as the `stop_words_` attribute could contain tokens that were meant to be discarded and not stored, such as passwords or keys. The impact of this vulnerability varies based on the nature of the data being processed by the vectorizer.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-5206",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://getsafety.com/v/71596/97c"
+        }
+    ],
+    "ignored_vulnerabilities": [],
+    "remediations": {
+        "scikit-learn": {
+            "requirements": {
+                "==0.20.0": {
+                    "vulnerabilities_found": 4,
+                    "version": "0.20.0",
+                    "requirement": {
+                        "raw": "scikit-learn==0.20.0",
+                        "extras": [],
+                        "marker": null,
+                        "name": "scikit-learn",
+                        "specifier": "==0.20.0",
+                        "url": null,
+                        "found": "/workspaces/Secure-AI-Code-and-Libraries-/Module 3 Securing 3rd party Ai Libraries/Project Secure Healthcare ML Pipeline/requirements_vuln.txt"
+                    },
+                    "more_info_url": "https://getsafety.com/p/pypi/scikit-learn/97c/"
+                }
+            },
+            "current_version": null,
+            "vulnerabilities_found": null,
+            "recommended_version": null,
+            "other_recommended_versions": [],
+            "more_info_url": null
+        }
+    },
+    "remediations_results": {
+        "vulnerabilities_fixed": [],
+        "remediations_applied": {},
+        "remediations_skipped": {}
+    }
+}
+
+
++===========================================================================================================================================================================================+
+
+
+DEPRECATED: this command (`check`) has been DEPRECATED, and will be unsupported beyond 01 June 2024.
+
+
+We highly encourage switching to the new `scan` command which is easier to use, more powerful, and can be set up to mimic the deprecated command if required.
+
+
++===========================================================================================================================================================================================+
+
+

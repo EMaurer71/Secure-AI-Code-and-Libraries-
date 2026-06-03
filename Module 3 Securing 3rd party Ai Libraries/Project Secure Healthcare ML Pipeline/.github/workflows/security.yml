@@ -1,0 +1,47 @@
+name: Security Scans
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install bandit semgrep pylint pip-audit safety pip-licenses cyclonedx-bom
+
+      - name: Run Bandit
+        run: bandit -r . -f json -o reports/bandit_ci.json
+
+      - name: Run Semgrep
+        run: semgrep --config=auto --json -o reports/semgrep_ci.json
+
+      - name: Run PyLint
+        run: pylint risk_model.py --output-format=json > reports/pylint_ci.json
+
+      - name: Run pip-audit
+        run: pip-audit -r requirements.txt -f json -o reports/pip_audit_ci.json || true
+
+      - name: Run Safety
+        run: safety check -r requirements.txt --json > reports/safety_ci.json || true
+
+      - name: Generate SBOM
+        run: cyclonedx-py -r -i requirements.txt -o reports/sbom_ci.json
+
+      - name: Upload reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: security-reports
+          path: reports/

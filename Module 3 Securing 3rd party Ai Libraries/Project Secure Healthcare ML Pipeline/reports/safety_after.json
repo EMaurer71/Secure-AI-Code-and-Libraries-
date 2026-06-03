@@ -1,0 +1,399 @@
+
+
++===========================================================================================================================================================================================+
+
+
+DEPRECATED: this command (`check`) has been DEPRECATED, and will be unsupported beyond 01 June 2024.
+
+
+We highly encourage switching to the new `scan` command which is easier to use, more powerful, and can be set up to mimic the deprecated command if required.
+
+
++===========================================================================================================================================================================================+
+
+
+{
+    "report_meta": {
+        "scan_target": "files",
+        "scanned": [
+            "requirements.txt"
+        ],
+        "scanned_full_path": [
+            "/workspaces/Secure-AI-Code-and-Libraries-/Module 3 Securing 3rd party Ai Libraries/Project Secure Healthcare ML Pipeline/requirements.txt"
+        ],
+        "target_languages": [
+            "python"
+        ],
+        "policy_file": null,
+        "policy_file_source": "local",
+        "audit_and_monitor": false,
+        "api_key": false,
+        "account": "",
+        "local_database_path": null,
+        "safety_version": "3.8.1",
+        "timestamp": "2026-06-03 20:21:41",
+        "packages_found": 4,
+        "vulnerabilities_found": 0,
+        "vulnerabilities_ignored": 2,
+        "remediations_recommended": 0,
+        "telemetry": {
+            "safety_options": {
+                "files": {
+                    "-r": 1
+                },
+                "json": {
+                    "--json": 1
+                }
+            },
+            "safety_version": "3.8.1",
+            "safety_source": "cli",
+            "os_type": "Linux",
+            "os_release": "6.8.0-1052-azure",
+            "os_description": "Linux-6.8.0-1052-azure-x86_64-with-glibc2.39",
+            "python_version": "3.12.1",
+            "safety_command": "check"
+        },
+        "git": {
+            "branch": "main",
+            "tag": "",
+            "commit": "53918f2960b8a37e780fb10cdb29de95df21acc4",
+            "dirty": "True",
+            "origin": "https://github.com/EMaurer71/Secure-AI-Code-and-Libraries-"
+        },
+        "project": null,
+        "json_version": "1.1",
+        "remediations_attempted": 0,
+        "remediations_completed": 0,
+        "remediation_mode": "NON_INTERACTIVE"
+    },
+    "scanned_packages": {
+        "pandas": {
+            "name": "pandas",
+            "version": null,
+            "requirements": [
+                {
+                    "raw": "pandas>=2.0.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pandas",
+                    "specifier": ">=2.0.0",
+                    "url": null,
+                    "found": "/workspaces/Secure-AI-Code-and-Libraries-/Module 3 Securing 3rd party Ai Libraries/Project Secure Healthcare ML Pipeline/requirements.txt"
+                }
+            ]
+        },
+        "scikit-learn": {
+            "name": "scikit-learn",
+            "version": null,
+            "requirements": [
+                {
+                    "raw": "scikit-learn>=1.3.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "scikit-learn",
+                    "specifier": ">=1.3.0",
+                    "url": null,
+                    "found": "/workspaces/Secure-AI-Code-and-Libraries-/Module 3 Securing 3rd party Ai Libraries/Project Secure Healthcare ML Pipeline/requirements.txt"
+                }
+            ]
+        },
+        "python-dotenv": {
+            "name": "python-dotenv",
+            "version": null,
+            "requirements": [
+                {
+                    "raw": "python-dotenv>=1.0.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "python-dotenv",
+                    "specifier": ">=1.0.0",
+                    "url": null,
+                    "found": "/workspaces/Secure-AI-Code-and-Libraries-/Module 3 Securing 3rd party Ai Libraries/Project Secure Healthcare ML Pipeline/requirements.txt"
+                }
+            ]
+        },
+        "joblib": {
+            "name": "joblib",
+            "version": null,
+            "requirements": [
+                {
+                    "raw": "joblib>=1.3.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "joblib",
+                    "specifier": ">=1.3.0",
+                    "url": null,
+                    "found": "/workspaces/Secure-AI-Code-and-Libraries-/Module 3 Securing 3rd party Ai Libraries/Project Secure Healthcare ML Pipeline/requirements.txt"
+                }
+            ]
+        }
+    },
+    "affected_packages": {
+        "python-dotenv": {
+            "name": "python-dotenv",
+            "version": null,
+            "requirements": [
+                {
+                    "raw": "python-dotenv>=1.0.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "python-dotenv",
+                    "specifier": ">=1.0.0",
+                    "url": null,
+                    "found": "/workspaces/Secure-AI-Code-and-Libraries-/Module 3 Securing 3rd party Ai Libraries/Project Secure Healthcare ML Pipeline/requirements.txt"
+                }
+            ],
+            "found": null,
+            "insecure_versions": [
+                "0.1.0",
+                "0.1.2",
+                "0.1.3",
+                "0.1.5",
+                "0.2.0",
+                "0.3.0",
+                "0.4.0",
+                "0.5.0",
+                "0.5.1",
+                "0.6.0",
+                "0.6.1",
+                "0.6.2",
+                "0.6.3",
+                "0.6.4",
+                "0.6.5",
+                "0.7.0",
+                "0.7.1",
+                "0.8.0",
+                "0.8.1",
+                "0.8.2",
+                "0.9.0",
+                "0.9.1",
+                "0.10.0",
+                "0.10.1",
+                "0.10.2",
+                "0.10.3",
+                "0.10.4",
+                "0.10.5",
+                "0.11.0",
+                "0.12.0",
+                "0.13.0",
+                "0.14.0",
+                "0.15.0",
+                "0.16.0",
+                "0.17.0",
+                "0.17.1",
+                "0.18.0",
+                "0.19.0",
+                "0.19.1",
+                "0.19.2",
+                "0.20.0",
+                "0.21.0",
+                "0.21.1",
+                "1.0.0",
+                "1.0.1",
+                "1.1.0",
+                "1.1.1",
+                "1.2.0",
+                "1.2.1"
+            ],
+            "secure_versions": [
+                "1.2.2"
+            ],
+            "latest_version_without_known_vulnerabilities": "1.2.2",
+            "latest_version": "1.2.2",
+            "more_info_url": "https://getsafety.com/p/pypi/python-dotenv/97c/"
+        },
+        "scikit-learn": {
+            "name": "scikit-learn",
+            "version": null,
+            "requirements": [
+                {
+                    "raw": "scikit-learn>=1.3.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "scikit-learn",
+                    "specifier": ">=1.3.0",
+                    "url": null,
+                    "found": "/workspaces/Secure-AI-Code-and-Libraries-/Module 3 Securing 3rd party Ai Libraries/Project Secure Healthcare ML Pipeline/requirements.txt"
+                }
+            ],
+            "found": null,
+            "insecure_versions": [
+                "0.9",
+                "0.10",
+                "0.11",
+                "0.12",
+                "0.12.1",
+                "0.13",
+                "0.13.1",
+                "0.14",
+                "0.14.1",
+                "0.15.0",
+                "0.15.1",
+                "0.15.2",
+                "0.16.0",
+                "0.16.1",
+                "0.17",
+                "0.17.1",
+                "0.18",
+                "0.18.1",
+                "0.18.2",
+                "0.19.0",
+                "0.19.1",
+                "0.19.2",
+                "0.20.0",
+                "0.20.1",
+                "0.20.2",
+                "0.20.3",
+                "0.20.4",
+                "0.21.0",
+                "0.21.1",
+                "0.21.2",
+                "0.21.3",
+                "0.22",
+                "0.22.1",
+                "0.22.2",
+                "0.22.2.post1",
+                "0.23.0",
+                "0.23.1",
+                "0.23.2",
+                "0.24.0",
+                "0.24.1",
+                "0.24.2",
+                "1.0",
+                "1.0.1",
+                "1.0.2",
+                "1.1.0",
+                "1.1.1",
+                "1.1.2",
+                "1.1.3",
+                "1.2.0rc1",
+                "1.2.0",
+                "1.2.1",
+                "1.2.2",
+                "1.3.0rc1",
+                "1.3.0",
+                "1.3.1",
+                "1.3.2",
+                "1.4.0rc1",
+                "1.4.0",
+                "1.4.1.post1",
+                "1.4.2",
+                "1.5.0rc1"
+            ],
+            "secure_versions": [
+                "1.9.0",
+                "1.9.0rc1",
+                "1.8.0",
+                "1.8.0rc1",
+                "1.7.2",
+                "1.7.1",
+                "1.7.0",
+                "1.7.0rc1",
+                "1.6.1",
+                "1.6.0",
+                "1.6.0rc1",
+                "1.5.2",
+                "1.5.1",
+                "1.5.0"
+            ],
+            "latest_version_without_known_vulnerabilities": "1.9.0",
+            "latest_version": "1.9.0",
+            "more_info_url": "https://getsafety.com/p/pypi/scikit-learn/97c/"
+        }
+    },
+    "announcements": [
+        {
+            "type": "warning",
+            "message": "Warning: pandas, scikit-learn, python-dotenv and joblib are unpinned. Safety by default does not report on potential vulnerabilities in unpinned packages. It is recommended to pin your dependencies unless this is a library meant for distribution. To learn more about reporting these, specifier range handling, and options for scanning unpinned packages visit https://docs.pyup.io/docs/safety-range-specs"
+        }
+    ],
+    "vulnerabilities": [],
+    "ignored_vulnerabilities": [
+        {
+            "vulnerability_id": "94066",
+            "package_name": "python-dotenv",
+            "ignored": true,
+            "ignored_reason": "This vulnerability is being ignored due to the 'ignore-unpinned-requirements' flag (default True). To change this, set 'ignore-unpinned-requirements' to False under 'security' in your policy file. See https://docs.pyup.io/docs/safety-20-policy-file for more information.",
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<1.2.2"
+            ],
+            "all_vulnerable_specs": [
+                "<1.2.2"
+            ],
+            "analyzed_version": null,
+            "analyzed_requirement": {
+                "raw": "python-dotenv>=1.0.0",
+                "extras": [],
+                "marker": null,
+                "name": "python-dotenv",
+                "specifier": ">=1.0.0",
+                "url": null,
+                "found": "/workspaces/Secure-AI-Code-and-Libraries-/Module 3 Securing 3rd party Ai Libraries/Project Secure Healthcare ML Pipeline/requirements.txt"
+            },
+            "advisory": "Affected versions of the python-dotenv package are vulnerable to Arbitrary File Overwrite due to unsafe symlink handling in the rewrite() context manager used by set_key() and unset_key() in dotenv/main.py. When the target .env path is a symbolic link and the system temporary directory resides on a different filesystem, shutil.move() falls back to shutil.copy2(), which follows symlinks by default and writes the new content to the symlink target rather than replacing the symlink itself. A local attacker with write access to the directory containing a .env file can pre-place a symlink pointing to any file writable by the process, causing a subsequent call to set_key() or unset_key() to deterministically overwrite the target with attacker-controlled .env content, resulting in integrity loss, Denial of Service, and potential privilege escalation when the consuming process runs with elevated privileges.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2026-28684",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://getsafety.com/v/94066/97c"
+        },
+        {
+            "vulnerability_id": "71596",
+            "package_name": "scikit-learn",
+            "ignored": true,
+            "ignored_reason": "This vulnerability is being ignored due to the 'ignore-unpinned-requirements' flag (default True). To change this, set 'ignore-unpinned-requirements' to False under 'security' in your policy file. See https://docs.pyup.io/docs/safety-20-policy-file for more information.",
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<1.5.0"
+            ],
+            "all_vulnerable_specs": [
+                "<1.5.0"
+            ],
+            "analyzed_version": null,
+            "analyzed_requirement": {
+                "raw": "scikit-learn>=1.3.0",
+                "extras": [],
+                "marker": null,
+                "name": "scikit-learn",
+                "specifier": ">=1.3.0",
+                "url": null,
+                "found": "/workspaces/Secure-AI-Code-and-Libraries-/Module 3 Securing 3rd party Ai Libraries/Project Secure Healthcare ML Pipeline/requirements.txt"
+            },
+            "advisory": "A sensitive data leakage vulnerability was identified in affected versions of scikit-learn TfidfVectorizer. The vulnerability arises from the unexpected storage of all tokens present in the training data within the `stop_words_` attribute, rather than only storing the subset of tokens required for the TF-IDF technique to function. This behavior leads to the potential leakage of sensitive information, as the `stop_words_` attribute could contain tokens that were meant to be discarded and not stored, such as passwords or keys. The impact of this vulnerability varies based on the nature of the data being processed by the vectorizer.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-5206",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://getsafety.com/v/71596/97c"
+        }
+    ],
+    "remediations": {},
+    "remediations_results": {
+        "vulnerabilities_fixed": [],
+        "remediations_applied": {},
+        "remediations_skipped": {}
+    }
+}
+
+
++===========================================================================================================================================================================================+
+
+
+DEPRECATED: this command (`check`) has been DEPRECATED, and will be unsupported beyond 01 June 2024.
+
+
+We highly encourage switching to the new `scan` command which is easier to use, more powerful, and can be set up to mimic the deprecated command if required.
+
+
++===========================================================================================================================================================================================+
+
+
