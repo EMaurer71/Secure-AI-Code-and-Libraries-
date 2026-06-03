@@ -1,0 +1,12 @@
+{
+  "vulnerabilities": [
+    {
+      "id": "MAL-0001",
+      "package": "tensorflov",
+      "version": "0.1.0",
+      "severity": "critical",
+      "description": "Malicious typosquatted package exfiltrating PHI.",
+      "fix_version": "Remove immediately"
+    }
+  ]
+}

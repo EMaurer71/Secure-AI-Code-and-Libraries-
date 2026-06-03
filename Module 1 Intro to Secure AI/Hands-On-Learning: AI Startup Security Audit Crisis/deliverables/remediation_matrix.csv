@@ -1,0 +1,11 @@
+file,line,test_id,cwe,severity,risk_score,remediation,estimated_time_hours
+supporting_files/demo_code_1.py,51,B301,502,MEDIUM,13,"Replace pickle with safer serialization (e.g., JSON, ONNX).",2
+supporting_files/demo_code_2.py,79,B301,502,MEDIUM,13,"Replace pickle with safer serialization (e.g., JSON, ONNX).",2
+supporting_files/demo_code_1.py,8,B403,502,LOW,11,"Replace pickle with safer serialization (e.g., JSON, ONNX).",2
+supporting_files/demo_code_2.py,8,B403,502,LOW,11,"Replace pickle with safer serialization (e.g., JSON, ONNX).",2
+supporting_files/demo_code_2.py,133,B105,259,LOW,8,Remove hardcoded credentials; use env vars or secret manager.,2
+supporting_files/demo_code_2.py,43,B101,703,LOW,7,Apply secure coding fix based on CWE and test_id.,2
+supporting_files/demo_code_2.py,42,B101,703,LOW,7,Apply secure coding fix based on CWE and test_id.,2
+supporting_files/demo_code_2.py,96,B101,703,LOW,7,Apply secure coding fix based on CWE and test_id.,2
+supporting_files/demo_code_2.py,151,B101,703,LOW,7,Apply secure coding fix based on CWE and test_id.,2
+supporting_files/demo_code_2.py,152,B101,703,LOW,7,Apply secure coding fix based on CWE and test_id.,2

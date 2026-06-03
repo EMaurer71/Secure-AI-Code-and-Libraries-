@@ -1,0 +1,57 @@
+name: Security Scan
+
+on:
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install bandit semgrep safety
+
+      - name: Run Bandit
+        run: |
+          bandit -r . -f json -o security-reports/bandit-results.json || true
+
+      - name: Run Semgrep
+        run: |
+          semgrep --config=auto . --json --output security-reports/semgrep-results.json || true
+
+      - name: Run Safety
+        run: |
+          safety check --json > security-reports/safety-results.json || true
+
+      - name: Upload security reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: security-reports
+          path: security-reports/
+
+      - name: Fail on HIGH severity (Bandit)
+        run: |
+          python - << 'EOF'
+          import json
+          import sys
+          try:
+              with open('security-reports/bandit-results.json') as f:
+                  data = json.load(f)
+          except FileNotFoundError:
+              print('No Bandit report found. Skipping fail step.')
+              sys.exit(0)
+          highs = [r for r in data.get('results', []) if r.get('issue_severity') in ('HIGH','CRITICAL')]
+          if highs:
+              print(f"Found {len(highs)} HIGH/CRITICAL issues. Failing build.")
+              sys.exit(1)
+          print('No HIGH/CRITICAL issues found.')
+          EOF

@@ -1,13 +1,15 @@
 rules:
-  - id: os-system-fstring
-    pattern: os.system(f"...{$ARG}...")
-    message: "os.system() with f-string user input"
-    languages: [python]
+  - id: command-injection-os-system
+    message: "Potential command injection via os.system — avoid executing shell commands with untrusted input."
     severity: ERROR
-
-  - id: subprocess-shell-true
-    pattern: subprocess.run($CMD, shell=True, ...)
-    message: "subprocess.run(..., shell=True)"
     languages: [python]
-    severity: WARNING
+    pattern: os.system($CMD)
+
+  - id: command-injection-subprocess
+    message: "Potential command injection via subprocess — avoid shell=True or unvalidated command strings."
+    severity: ERROR
+    languages: [python]
+    patterns:
+      - pattern: subprocess.run($CMD, ...)
+      - pattern-not: subprocess.run([$CMD], ...)
 

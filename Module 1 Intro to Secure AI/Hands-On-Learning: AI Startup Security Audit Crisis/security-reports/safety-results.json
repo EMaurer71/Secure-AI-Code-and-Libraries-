@@ -1,0 +1,2204 @@
+
+
++===========================================================================================================================================================================================+
+
+
+DEPRECATED: this command (`check`) has been DEPRECATED, and will be unsupported beyond 01 June 2024.
+
+
+We highly encourage switching to the new `scan` command which is easier to use, more powerful, and can be set up to mimic the deprecated command if required.
+
+
++===========================================================================================================================================================================================+
+
+
+{
+    "report_meta": {
+        "scan_target": "stdin",
+        "scanned": [
+            "annotated-doc",
+            "annotated-types",
+            "anyio",
+            "astroid",
+            "asttokens",
+            "attrs",
+            "authlib",
+            "bandit",
+            "boltons",
+            "bracex",
+            "certifi",
+            "cffi",
+            "charset-normalizer",
+            "click",
+            "click-option-group",
+            "colorama",
+            "comm",
+            "contourpy",
+            "cryptography",
+            "cycler",
+            "debugpy",
+            "decorator",
+            "dill",
+            "dparse",
+            "exceptiongroup",
+            "executing",
+            "face",
+            "filelock",
+            "fonttools",
+            "glom",
+            "googleapis-common-protos",
+            "h11",
+            "httpcore",
+            "httpx",
+            "httpx-sse",
+            "idna",
+            "importlib-metadata",
+            "ipykernel",
+            "ipython",
+            "ipython-pygments-lexers",
+            "isort",
+            "jedi",
+            "jinja2",
+            "joblib",
+            "joserfc",
+            "jsonschema",
+            "jsonschema-specifications",
+            "jupyter-client",
+            "jupyter-core",
+            "kiwisolver",
+            "markdown-it-py",
+            "markupsafe",
+            "marshmallow",
+            "matplotlib",
+            "matplotlib-inline",
+            "mccabe",
+            "mcp",
+            "mdurl",
+            "nest-asyncio",
+            "nltk",
+            "numpy",
+            "opentelemetry-api",
+            "opentelemetry-exporter-otlp-proto-common",
+            "opentelemetry-exporter-otlp-proto-http",
+            "opentelemetry-instrumentation",
+            "opentelemetry-instrumentation-requests",
+            "opentelemetry-instrumentation-threading",
+            "opentelemetry-proto",
+            "opentelemetry-sdk",
+            "opentelemetry-semantic-conventions",
+            "opentelemetry-util-http",
+            "packaging",
+            "pandas",
+            "parso",
+            "peewee",
+            "pexpect",
+            "pillow",
+            "platformdirs",
+            "prompt-toolkit",
+            "protobuf",
+            "psutil",
+            "ptyprocess",
+            "pure-eval",
+            "pycparser",
+            "pydantic",
+            "pydantic-settings",
+            "pydantic-core",
+            "pygments",
+            "pyjwt",
+            "pylint",
+            "pyparsing",
+            "python-dateutil",
+            "python-dotenv",
+            "python-multipart",
+            "pyyaml",
+            "pyzmq",
+            "referencing",
+            "regex",
+            "requests",
+            "rich",
+            "rpds-py",
+            "ruamel-yaml",
+            "ruamel-yaml-clib",
+            "safety",
+            "safety-schemas",
+            "scikit-learn",
+            "scipy",
+            "semantic-version",
+            "semgrep",
+            "shellingham",
+            "six",
+            "sse-starlette",
+            "stack-data",
+            "starlette",
+            "stevedore",
+            "tenacity",
+            "threadpoolctl",
+            "tomli",
+            "tomlkit",
+            "tornado",
+            "tqdm",
+            "traitlets",
+            "truststore",
+            "typer",
+            "typing-inspection",
+            "typing-extensions",
+            "urllib3",
+            "uvicorn",
+            "wcmatch",
+            "wcwidth",
+            "wrapt",
+            "zipp"
+        ],
+        "scanned_full_path": [],
+        "target_languages": [
+            "python"
+        ],
+        "policy_file": null,
+        "policy_file_source": "local",
+        "audit_and_monitor": false,
+        "api_key": false,
+        "account": "",
+        "local_database_path": null,
+        "safety_version": "3.8.1",
+        "timestamp": "2026-06-02 00:17:57",
+        "packages_found": 132,
+        "vulnerabilities_found": 0,
+        "vulnerabilities_ignored": 0,
+        "remediations_recommended": 0,
+        "telemetry": {
+            "safety_options": {
+                "stdin": {
+                    "--stdin": 1
+                },
+                "output": {
+                    "--output": 1
+                }
+            },
+            "safety_version": "3.8.1",
+            "safety_source": "cli",
+            "os_type": "Linux",
+            "os_release": "6.8.0-1052-azure",
+            "os_description": "Linux-6.8.0-1052-azure-x86_64-with-glibc2.39",
+            "python_version": "3.12.1",
+            "safety_command": "check"
+        },
+        "git": {
+            "branch": "main",
+            "tag": "",
+            "commit": "3c799491c7f68361c22ef06326f087c6987f96c3",
+            "dirty": "True",
+            "origin": "https://github.com/EMaurer71/Secure-AI-Code-and-Libraries-"
+        },
+        "project": null,
+        "json_version": "1.1",
+        "remediations_attempted": 0,
+        "remediations_completed": 0,
+        "remediation_mode": "NON_INTERACTIVE"
+    },
+    "scanned_packages": {
+        "annotated-doc": {
+            "name": "annotated-doc",
+            "version": "0.0.4",
+            "requirements": [
+                {
+                    "raw": "annotated-doc==0.0.4",
+                    "extras": [],
+                    "marker": null,
+                    "name": "annotated-doc",
+                    "specifier": "==0.0.4",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "annotated-types": {
+            "name": "annotated-types",
+            "version": "0.7.0",
+            "requirements": [
+                {
+                    "raw": "annotated-types==0.7.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "annotated-types",
+                    "specifier": "==0.7.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "anyio": {
+            "name": "anyio",
+            "version": "4.13.0",
+            "requirements": [
+                {
+                    "raw": "anyio==4.13.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "anyio",
+                    "specifier": "==4.13.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "astroid": {
+            "name": "astroid",
+            "version": "4.0.4",
+            "requirements": [
+                {
+                    "raw": "astroid==4.0.4",
+                    "extras": [],
+                    "marker": null,
+                    "name": "astroid",
+                    "specifier": "==4.0.4",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "asttokens": {
+            "name": "asttokens",
+            "version": "3.0.1",
+            "requirements": [
+                {
+                    "raw": "asttokens==3.0.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "asttokens",
+                    "specifier": "==3.0.1",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "attrs": {
+            "name": "attrs",
+            "version": "26.1.0",
+            "requirements": [
+                {
+                    "raw": "attrs==26.1.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "attrs",
+                    "specifier": "==26.1.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "authlib": {
+            "name": "authlib",
+            "version": "1.7.2",
+            "requirements": [
+                {
+                    "raw": "Authlib==1.7.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "Authlib",
+                    "specifier": "==1.7.2",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "bandit": {
+            "name": "bandit",
+            "version": "1.9.4",
+            "requirements": [
+                {
+                    "raw": "bandit==1.9.4",
+                    "extras": [],
+                    "marker": null,
+                    "name": "bandit",
+                    "specifier": "==1.9.4",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "boltons": {
+            "name": "boltons",
+            "version": "21.0.0",
+            "requirements": [
+                {
+                    "raw": "boltons==21.0.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "boltons",
+                    "specifier": "==21.0.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "bracex": {
+            "name": "bracex",
+            "version": "2.6",
+            "requirements": [
+                {
+                    "raw": "bracex==2.6",
+                    "extras": [],
+                    "marker": null,
+                    "name": "bracex",
+                    "specifier": "==2.6",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "certifi": {
+            "name": "certifi",
+            "version": "2026.5.20",
+            "requirements": [
+                {
+                    "raw": "certifi==2026.5.20",
+                    "extras": [],
+                    "marker": null,
+                    "name": "certifi",
+                    "specifier": "==2026.5.20",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "cffi": {
+            "name": "cffi",
+            "version": "2.0.0",
+            "requirements": [
+                {
+                    "raw": "cffi==2.0.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "cffi",
+                    "specifier": "==2.0.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "charset-normalizer": {
+            "name": "charset-normalizer",
+            "version": "3.4.7",
+            "requirements": [
+                {
+                    "raw": "charset-normalizer==3.4.7",
+                    "extras": [],
+                    "marker": null,
+                    "name": "charset-normalizer",
+                    "specifier": "==3.4.7",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "click": {
+            "name": "click",
+            "version": "8.1.8",
+            "requirements": [
+                {
+                    "raw": "click==8.1.8",
+                    "extras": [],
+                    "marker": null,
+                    "name": "click",
+                    "specifier": "==8.1.8",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "click-option-group": {
+            "name": "click-option-group",
+            "version": "0.5.9",
+            "requirements": [
+                {
+                    "raw": "click-option-group==0.5.9",
+                    "extras": [],
+                    "marker": null,
+                    "name": "click-option-group",
+                    "specifier": "==0.5.9",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "colorama": {
+            "name": "colorama",
+            "version": "0.4.6",
+            "requirements": [
+                {
+                    "raw": "colorama==0.4.6",
+                    "extras": [],
+                    "marker": null,
+                    "name": "colorama",
+                    "specifier": "==0.4.6",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "comm": {
+            "name": "comm",
+            "version": "0.2.3",
+            "requirements": [
+                {
+                    "raw": "comm==0.2.3",
+                    "extras": [],
+                    "marker": null,
+                    "name": "comm",
+                    "specifier": "==0.2.3",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "contourpy": {
+            "name": "contourpy",
+            "version": "1.3.3",
+            "requirements": [
+                {
+                    "raw": "contourpy==1.3.3",
+                    "extras": [],
+                    "marker": null,
+                    "name": "contourpy",
+                    "specifier": "==1.3.3",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "cryptography": {
+            "name": "cryptography",
+            "version": "48.0.0",
+            "requirements": [
+                {
+                    "raw": "cryptography==48.0.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "cryptography",
+                    "specifier": "==48.0.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "cycler": {
+            "name": "cycler",
+            "version": "0.12.1",
+            "requirements": [
+                {
+                    "raw": "cycler==0.12.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "cycler",
+                    "specifier": "==0.12.1",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "debugpy": {
+            "name": "debugpy",
+            "version": "1.8.21",
+            "requirements": [
+                {
+                    "raw": "debugpy==1.8.21",
+                    "extras": [],
+                    "marker": null,
+                    "name": "debugpy",
+                    "specifier": "==1.8.21",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "decorator": {
+            "name": "decorator",
+            "version": "5.3.1",
+            "requirements": [
+                {
+                    "raw": "decorator==5.3.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "decorator",
+                    "specifier": "==5.3.1",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "dill": {
+            "name": "dill",
+            "version": "0.4.1",
+            "requirements": [
+                {
+                    "raw": "dill==0.4.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "dill",
+                    "specifier": "==0.4.1",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "dparse": {
+            "name": "dparse",
+            "version": "0.6.4",
+            "requirements": [
+                {
+                    "raw": "dparse==0.6.4",
+                    "extras": [],
+                    "marker": null,
+                    "name": "dparse",
+                    "specifier": "==0.6.4",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "exceptiongroup": {
+            "name": "exceptiongroup",
+            "version": "1.2.2",
+            "requirements": [
+                {
+                    "raw": "exceptiongroup==1.2.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "exceptiongroup",
+                    "specifier": "==1.2.2",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "executing": {
+            "name": "executing",
+            "version": "2.2.1",
+            "requirements": [
+                {
+                    "raw": "executing==2.2.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "executing",
+                    "specifier": "==2.2.1",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "face": {
+            "name": "face",
+            "version": "26.0.0",
+            "requirements": [
+                {
+                    "raw": "face==26.0.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "face",
+                    "specifier": "==26.0.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "filelock": {
+            "name": "filelock",
+            "version": "3.29.0",
+            "requirements": [
+                {
+                    "raw": "filelock==3.29.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "filelock",
+                    "specifier": "==3.29.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "fonttools": {
+            "name": "fonttools",
+            "version": "4.63.0",
+            "requirements": [
+                {
+                    "raw": "fonttools==4.63.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "fonttools",
+                    "specifier": "==4.63.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "glom": {
+            "name": "glom",
+            "version": "25.12.0",
+            "requirements": [
+                {
+                    "raw": "glom==25.12.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "glom",
+                    "specifier": "==25.12.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "googleapis-common-protos": {
+            "name": "googleapis-common-protos",
+            "version": "1.75.0",
+            "requirements": [
+                {
+                    "raw": "googleapis-common-protos==1.75.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "googleapis-common-protos",
+                    "specifier": "==1.75.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "h11": {
+            "name": "h11",
+            "version": "0.16.0",
+            "requirements": [
+                {
+                    "raw": "h11==0.16.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "h11",
+                    "specifier": "==0.16.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "httpcore": {
+            "name": "httpcore",
+            "version": "1.0.9",
+            "requirements": [
+                {
+                    "raw": "httpcore==1.0.9",
+                    "extras": [],
+                    "marker": null,
+                    "name": "httpcore",
+                    "specifier": "==1.0.9",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "httpx": {
+            "name": "httpx",
+            "version": "0.28.1",
+            "requirements": [
+                {
+                    "raw": "httpx==0.28.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "httpx",
+                    "specifier": "==0.28.1",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "httpx-sse": {
+            "name": "httpx-sse",
+            "version": "0.4.3",
+            "requirements": [
+                {
+                    "raw": "httpx-sse==0.4.3",
+                    "extras": [],
+                    "marker": null,
+                    "name": "httpx-sse",
+                    "specifier": "==0.4.3",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "idna": {
+            "name": "idna",
+            "version": "3.17",
+            "requirements": [
+                {
+                    "raw": "idna==3.17",
+                    "extras": [],
+                    "marker": null,
+                    "name": "idna",
+                    "specifier": "==3.17",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "importlib-metadata": {
+            "name": "importlib-metadata",
+            "version": "8.7.1",
+            "requirements": [
+                {
+                    "raw": "importlib_metadata==8.7.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "importlib_metadata",
+                    "specifier": "==8.7.1",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "ipykernel": {
+            "name": "ipykernel",
+            "version": "7.2.0",
+            "requirements": [
+                {
+                    "raw": "ipykernel==7.2.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "ipykernel",
+                    "specifier": "==7.2.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "ipython": {
+            "name": "ipython",
+            "version": "9.14.0",
+            "requirements": [
+                {
+                    "raw": "ipython==9.14.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "ipython",
+                    "specifier": "==9.14.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "ipython-pygments-lexers": {
+            "name": "ipython-pygments-lexers",
+            "version": "1.1.1",
+            "requirements": [
+                {
+                    "raw": "ipython_pygments_lexers==1.1.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "ipython_pygments_lexers",
+                    "specifier": "==1.1.1",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "isort": {
+            "name": "isort",
+            "version": "8.0.1",
+            "requirements": [
+                {
+                    "raw": "isort==8.0.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "isort",
+                    "specifier": "==8.0.1",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "jedi": {
+            "name": "jedi",
+            "version": "0.20.0",
+            "requirements": [
+                {
+                    "raw": "jedi==0.20.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "jedi",
+                    "specifier": "==0.20.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "jinja2": {
+            "name": "jinja2",
+            "version": "3.1.6",
+            "requirements": [
+                {
+                    "raw": "Jinja2==3.1.6",
+                    "extras": [],
+                    "marker": null,
+                    "name": "Jinja2",
+                    "specifier": "==3.1.6",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "joblib": {
+            "name": "joblib",
+            "version": "1.5.3",
+            "requirements": [
+                {
+                    "raw": "joblib==1.5.3",
+                    "extras": [],
+                    "marker": null,
+                    "name": "joblib",
+                    "specifier": "==1.5.3",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "joserfc": {
+            "name": "joserfc",
+            "version": "1.6.8",
+            "requirements": [
+                {
+                    "raw": "joserfc==1.6.8",
+                    "extras": [],
+                    "marker": null,
+                    "name": "joserfc",
+                    "specifier": "==1.6.8",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "jsonschema": {
+            "name": "jsonschema",
+            "version": "4.25.1",
+            "requirements": [
+                {
+                    "raw": "jsonschema==4.25.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "jsonschema",
+                    "specifier": "==4.25.1",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "jsonschema-specifications": {
+            "name": "jsonschema-specifications",
+            "version": "2025.9.1",
+            "requirements": [
+                {
+                    "raw": "jsonschema-specifications==2025.9.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "jsonschema-specifications",
+                    "specifier": "==2025.9.1",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "jupyter-client": {
+            "name": "jupyter-client",
+            "version": "8.8.0",
+            "requirements": [
+                {
+                    "raw": "jupyter_client==8.8.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "jupyter_client",
+                    "specifier": "==8.8.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "jupyter-core": {
+            "name": "jupyter-core",
+            "version": "5.9.1",
+            "requirements": [
+                {
+                    "raw": "jupyter_core==5.9.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "jupyter_core",
+                    "specifier": "==5.9.1",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "kiwisolver": {
+            "name": "kiwisolver",
+            "version": "1.5.0",
+            "requirements": [
+                {
+                    "raw": "kiwisolver==1.5.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "kiwisolver",
+                    "specifier": "==1.5.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "markdown-it-py": {
+            "name": "markdown-it-py",
+            "version": "4.2.0",
+            "requirements": [
+                {
+                    "raw": "markdown-it-py==4.2.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "markdown-it-py",
+                    "specifier": "==4.2.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "markupsafe": {
+            "name": "markupsafe",
+            "version": "3.0.3",
+            "requirements": [
+                {
+                    "raw": "MarkupSafe==3.0.3",
+                    "extras": [],
+                    "marker": null,
+                    "name": "MarkupSafe",
+                    "specifier": "==3.0.3",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "marshmallow": {
+            "name": "marshmallow",
+            "version": "4.3.0",
+            "requirements": [
+                {
+                    "raw": "marshmallow==4.3.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "marshmallow",
+                    "specifier": "==4.3.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "matplotlib": {
+            "name": "matplotlib",
+            "version": "3.10.9",
+            "requirements": [
+                {
+                    "raw": "matplotlib==3.10.9",
+                    "extras": [],
+                    "marker": null,
+                    "name": "matplotlib",
+                    "specifier": "==3.10.9",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "matplotlib-inline": {
+            "name": "matplotlib-inline",
+            "version": "0.2.2",
+            "requirements": [
+                {
+                    "raw": "matplotlib-inline==0.2.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "matplotlib-inline",
+                    "specifier": "==0.2.2",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "mccabe": {
+            "name": "mccabe",
+            "version": "0.7.0",
+            "requirements": [
+                {
+                    "raw": "mccabe==0.7.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "mccabe",
+                    "specifier": "==0.7.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "mcp": {
+            "name": "mcp",
+            "version": "1.23.3",
+            "requirements": [
+                {
+                    "raw": "mcp==1.23.3",
+                    "extras": [],
+                    "marker": null,
+                    "name": "mcp",
+                    "specifier": "==1.23.3",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "mdurl": {
+            "name": "mdurl",
+            "version": "0.1.2",
+            "requirements": [
+                {
+                    "raw": "mdurl==0.1.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "mdurl",
+                    "specifier": "==0.1.2",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "nest-asyncio": {
+            "name": "nest-asyncio",
+            "version": "1.6.0",
+            "requirements": [
+                {
+                    "raw": "nest-asyncio==1.6.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "nest-asyncio",
+                    "specifier": "==1.6.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "nltk": {
+            "name": "nltk",
+            "version": "3.9.4",
+            "requirements": [
+                {
+                    "raw": "nltk==3.9.4",
+                    "extras": [],
+                    "marker": null,
+                    "name": "nltk",
+                    "specifier": "==3.9.4",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "numpy": {
+            "name": "numpy",
+            "version": "2.4.6",
+            "requirements": [
+                {
+                    "raw": "numpy==2.4.6",
+                    "extras": [],
+                    "marker": null,
+                    "name": "numpy",
+                    "specifier": "==2.4.6",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "opentelemetry-api": {
+            "name": "opentelemetry-api",
+            "version": "1.37.0",
+            "requirements": [
+                {
+                    "raw": "opentelemetry-api==1.37.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "opentelemetry-api",
+                    "specifier": "==1.37.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "opentelemetry-exporter-otlp-proto-common": {
+            "name": "opentelemetry-exporter-otlp-proto-common",
+            "version": "1.37.0",
+            "requirements": [
+                {
+                    "raw": "opentelemetry-exporter-otlp-proto-common==1.37.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "opentelemetry-exporter-otlp-proto-common",
+                    "specifier": "==1.37.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "opentelemetry-exporter-otlp-proto-http": {
+            "name": "opentelemetry-exporter-otlp-proto-http",
+            "version": "1.37.0",
+            "requirements": [
+                {
+                    "raw": "opentelemetry-exporter-otlp-proto-http==1.37.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "opentelemetry-exporter-otlp-proto-http",
+                    "specifier": "==1.37.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "opentelemetry-instrumentation": {
+            "name": "opentelemetry-instrumentation",
+            "version": "0.58b0",
+            "requirements": [
+                {
+                    "raw": "opentelemetry-instrumentation==0.58b0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "opentelemetry-instrumentation",
+                    "specifier": "==0.58b0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "opentelemetry-instrumentation-requests": {
+            "name": "opentelemetry-instrumentation-requests",
+            "version": "0.58b0",
+            "requirements": [
+                {
+                    "raw": "opentelemetry-instrumentation-requests==0.58b0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "opentelemetry-instrumentation-requests",
+                    "specifier": "==0.58b0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "opentelemetry-instrumentation-threading": {
+            "name": "opentelemetry-instrumentation-threading",
+            "version": "0.58b0",
+            "requirements": [
+                {
+                    "raw": "opentelemetry-instrumentation-threading==0.58b0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "opentelemetry-instrumentation-threading",
+                    "specifier": "==0.58b0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "opentelemetry-proto": {
+            "name": "opentelemetry-proto",
+            "version": "1.37.0",
+            "requirements": [
+                {
+                    "raw": "opentelemetry-proto==1.37.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "opentelemetry-proto",
+                    "specifier": "==1.37.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "opentelemetry-sdk": {
+            "name": "opentelemetry-sdk",
+            "version": "1.37.0",
+            "requirements": [
+                {
+                    "raw": "opentelemetry-sdk==1.37.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "opentelemetry-sdk",
+                    "specifier": "==1.37.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "opentelemetry-semantic-conventions": {
+            "name": "opentelemetry-semantic-conventions",
+            "version": "0.58b0",
+            "requirements": [
+                {
+                    "raw": "opentelemetry-semantic-conventions==0.58b0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "opentelemetry-semantic-conventions",
+                    "specifier": "==0.58b0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "opentelemetry-util-http": {
+            "name": "opentelemetry-util-http",
+            "version": "0.58b0",
+            "requirements": [
+                {
+                    "raw": "opentelemetry-util-http==0.58b0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "opentelemetry-util-http",
+                    "specifier": "==0.58b0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "packaging": {
+            "name": "packaging",
+            "version": "26.2",
+            "requirements": [
+                {
+                    "raw": "packaging==26.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "packaging",
+                    "specifier": "==26.2",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "pandas": {
+            "name": "pandas",
+            "version": "3.0.3",
+            "requirements": [
+                {
+                    "raw": "pandas==3.0.3",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pandas",
+                    "specifier": "==3.0.3",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "parso": {
+            "name": "parso",
+            "version": "0.8.7",
+            "requirements": [
+                {
+                    "raw": "parso==0.8.7",
+                    "extras": [],
+                    "marker": null,
+                    "name": "parso",
+                    "specifier": "==0.8.7",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "peewee": {
+            "name": "peewee",
+            "version": "3.19.0",
+            "requirements": [
+                {
+                    "raw": "peewee==3.19.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "peewee",
+                    "specifier": "==3.19.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "pexpect": {
+            "name": "pexpect",
+            "version": "4.9.0",
+            "requirements": [
+                {
+                    "raw": "pexpect==4.9.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pexpect",
+                    "specifier": "==4.9.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "pillow": {
+            "name": "pillow",
+            "version": "12.2.0",
+            "requirements": [
+                {
+                    "raw": "pillow==12.2.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pillow",
+                    "specifier": "==12.2.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "platformdirs": {
+            "name": "platformdirs",
+            "version": "4.10.0",
+            "requirements": [
+                {
+                    "raw": "platformdirs==4.10.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "platformdirs",
+                    "specifier": "==4.10.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "prompt-toolkit": {
+            "name": "prompt-toolkit",
+            "version": "3.0.52",
+            "requirements": [
+                {
+                    "raw": "prompt_toolkit==3.0.52",
+                    "extras": [],
+                    "marker": null,
+                    "name": "prompt_toolkit",
+                    "specifier": "==3.0.52",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "protobuf": {
+            "name": "protobuf",
+            "version": "6.33.6",
+            "requirements": [
+                {
+                    "raw": "protobuf==6.33.6",
+                    "extras": [],
+                    "marker": null,
+                    "name": "protobuf",
+                    "specifier": "==6.33.6",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "psutil": {
+            "name": "psutil",
+            "version": "7.2.2",
+            "requirements": [
+                {
+                    "raw": "psutil==7.2.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "psutil",
+                    "specifier": "==7.2.2",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "ptyprocess": {
+            "name": "ptyprocess",
+            "version": "0.7.0",
+            "requirements": [
+                {
+                    "raw": "ptyprocess==0.7.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "ptyprocess",
+                    "specifier": "==0.7.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "pure-eval": {
+            "name": "pure-eval",
+            "version": "0.2.3",
+            "requirements": [
+                {
+                    "raw": "pure_eval==0.2.3",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pure_eval",
+                    "specifier": "==0.2.3",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "pycparser": {
+            "name": "pycparser",
+            "version": "3.0",
+            "requirements": [
+                {
+                    "raw": "pycparser==3.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pycparser",
+                    "specifier": "==3.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "pydantic": {
+            "name": "pydantic",
+            "version": "2.13.4",
+            "requirements": [
+                {
+                    "raw": "pydantic==2.13.4",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pydantic",
+                    "specifier": "==2.13.4",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "pydantic-settings": {
+            "name": "pydantic-settings",
+            "version": "2.14.1",
+            "requirements": [
+                {
+                    "raw": "pydantic-settings==2.14.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pydantic-settings",
+                    "specifier": "==2.14.1",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "pydantic-core": {
+            "name": "pydantic-core",
+            "version": "2.46.4",
+            "requirements": [
+                {
+                    "raw": "pydantic_core==2.46.4",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pydantic_core",
+                    "specifier": "==2.46.4",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "pygments": {
+            "name": "pygments",
+            "version": "2.20.0",
+            "requirements": [
+                {
+                    "raw": "Pygments==2.20.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "Pygments",
+                    "specifier": "==2.20.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "pyjwt": {
+            "name": "pyjwt",
+            "version": "2.12.1",
+            "requirements": [
+                {
+                    "raw": "PyJWT==2.12.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "PyJWT",
+                    "specifier": "==2.12.1",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "pylint": {
+            "name": "pylint",
+            "version": "4.0.5",
+            "requirements": [
+                {
+                    "raw": "pylint==4.0.5",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pylint",
+                    "specifier": "==4.0.5",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "pyparsing": {
+            "name": "pyparsing",
+            "version": "3.3.2",
+            "requirements": [
+                {
+                    "raw": "pyparsing==3.3.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pyparsing",
+                    "specifier": "==3.3.2",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "python-dateutil": {
+            "name": "python-dateutil",
+            "version": "2.9.0.post0",
+            "requirements": [
+                {
+                    "raw": "python-dateutil==2.9.0.post0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "python-dateutil",
+                    "specifier": "==2.9.0.post0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "python-dotenv": {
+            "name": "python-dotenv",
+            "version": "1.2.2",
+            "requirements": [
+                {
+                    "raw": "python-dotenv==1.2.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "python-dotenv",
+                    "specifier": "==1.2.2",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "python-multipart": {
+            "name": "python-multipart",
+            "version": "0.0.30",
+            "requirements": [
+                {
+                    "raw": "python-multipart==0.0.30",
+                    "extras": [],
+                    "marker": null,
+                    "name": "python-multipart",
+                    "specifier": "==0.0.30",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "pyyaml": {
+            "name": "pyyaml",
+            "version": "6.0.3",
+            "requirements": [
+                {
+                    "raw": "PyYAML==6.0.3",
+                    "extras": [],
+                    "marker": null,
+                    "name": "PyYAML",
+                    "specifier": "==6.0.3",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "pyzmq": {
+            "name": "pyzmq",
+            "version": "27.1.0",
+            "requirements": [
+                {
+                    "raw": "pyzmq==27.1.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pyzmq",
+                    "specifier": "==27.1.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "referencing": {
+            "name": "referencing",
+            "version": "0.37.0",
+            "requirements": [
+                {
+                    "raw": "referencing==0.37.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "referencing",
+                    "specifier": "==0.37.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "regex": {
+            "name": "regex",
+            "version": "2026.5.9",
+            "requirements": [
+                {
+                    "raw": "regex==2026.5.9",
+                    "extras": [],
+                    "marker": null,
+                    "name": "regex",
+                    "specifier": "==2026.5.9",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "requests": {
+            "name": "requests",
+            "version": "2.34.2",
+            "requirements": [
+                {
+                    "raw": "requests==2.34.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "requests",
+                    "specifier": "==2.34.2",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "rich": {
+            "name": "rich",
+            "version": "15.0.0",
+            "requirements": [
+                {
+                    "raw": "rich==15.0.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "rich",
+                    "specifier": "==15.0.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "rpds-py": {
+            "name": "rpds-py",
+            "version": "2026.5.1",
+            "requirements": [
+                {
+                    "raw": "rpds-py==2026.5.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "rpds-py",
+                    "specifier": "==2026.5.1",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "ruamel-yaml": {
+            "name": "ruamel-yaml",
+            "version": "0.19.1",
+            "requirements": [
+                {
+                    "raw": "ruamel.yaml==0.19.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "ruamel.yaml",
+                    "specifier": "==0.19.1",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "ruamel-yaml-clib": {
+            "name": "ruamel-yaml-clib",
+            "version": "0.2.15",
+            "requirements": [
+                {
+                    "raw": "ruamel.yaml.clib==0.2.15",
+                    "extras": [],
+                    "marker": null,
+                    "name": "ruamel.yaml.clib",
+                    "specifier": "==0.2.15",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "safety": {
+            "name": "safety",
+            "version": "3.8.1",
+            "requirements": [
+                {
+                    "raw": "safety==3.8.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "safety",
+                    "specifier": "==3.8.1",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "safety-schemas": {
+            "name": "safety-schemas",
+            "version": "0.0.16",
+            "requirements": [
+                {
+                    "raw": "safety-schemas==0.0.16",
+                    "extras": [],
+                    "marker": null,
+                    "name": "safety-schemas",
+                    "specifier": "==0.0.16",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "scikit-learn": {
+            "name": "scikit-learn",
+            "version": "1.8.0",
+            "requirements": [
+                {
+                    "raw": "scikit-learn==1.8.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "scikit-learn",
+                    "specifier": "==1.8.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "scipy": {
+            "name": "scipy",
+            "version": "1.17.1",
+            "requirements": [
+                {
+                    "raw": "scipy==1.17.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "scipy",
+                    "specifier": "==1.17.1",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "semantic-version": {
+            "name": "semantic-version",
+            "version": "2.10.0",
+            "requirements": [
+                {
+                    "raw": "semantic-version==2.10.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "semantic-version",
+                    "specifier": "==2.10.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "semgrep": {
+            "name": "semgrep",
+            "version": "1.164.0",
+            "requirements": [
+                {
+                    "raw": "semgrep==1.164.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "semgrep",
+                    "specifier": "==1.164.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "shellingham": {
+            "name": "shellingham",
+            "version": "1.5.4",
+            "requirements": [
+                {
+                    "raw": "shellingham==1.5.4",
+                    "extras": [],
+                    "marker": null,
+                    "name": "shellingham",
+                    "specifier": "==1.5.4",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "six": {
+            "name": "six",
+            "version": "1.17.0",
+            "requirements": [
+                {
+                    "raw": "six==1.17.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "six",
+                    "specifier": "==1.17.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "sse-starlette": {
+            "name": "sse-starlette",
+            "version": "3.4.4",
+            "requirements": [
+                {
+                    "raw": "sse-starlette==3.4.4",
+                    "extras": [],
+                    "marker": null,
+                    "name": "sse-starlette",
+                    "specifier": "==3.4.4",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "stack-data": {
+            "name": "stack-data",
+            "version": "0.6.3",
+            "requirements": [
+                {
+                    "raw": "stack-data==0.6.3",
+                    "extras": [],
+                    "marker": null,
+                    "name": "stack-data",
+                    "specifier": "==0.6.3",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "starlette": {
+            "name": "starlette",
+            "version": "1.2.1",
+            "requirements": [
+                {
+                    "raw": "starlette==1.2.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "starlette",
+                    "specifier": "==1.2.1",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "stevedore": {
+            "name": "stevedore",
+            "version": "5.8.0",
+            "requirements": [
+                {
+                    "raw": "stevedore==5.8.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "stevedore",
+                    "specifier": "==5.8.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "tenacity": {
+            "name": "tenacity",
+            "version": "9.1.4",
+            "requirements": [
+                {
+                    "raw": "tenacity==9.1.4",
+                    "extras": [],
+                    "marker": null,
+                    "name": "tenacity",
+                    "specifier": "==9.1.4",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "threadpoolctl": {
+            "name": "threadpoolctl",
+            "version": "3.6.0",
+            "requirements": [
+                {
+                    "raw": "threadpoolctl==3.6.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "threadpoolctl",
+                    "specifier": "==3.6.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "tomli": {
+            "name": "tomli",
+            "version": "2.4.1",
+            "requirements": [
+                {
+                    "raw": "tomli==2.4.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "tomli",
+                    "specifier": "==2.4.1",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "tomlkit": {
+            "name": "tomlkit",
+            "version": "0.15.0",
+            "requirements": [
+                {
+                    "raw": "tomlkit==0.15.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "tomlkit",
+                    "specifier": "==0.15.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "tornado": {
+            "name": "tornado",
+            "version": "6.5.6",
+            "requirements": [
+                {
+                    "raw": "tornado==6.5.6",
+                    "extras": [],
+                    "marker": null,
+                    "name": "tornado",
+                    "specifier": "==6.5.6",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "tqdm": {
+            "name": "tqdm",
+            "version": "4.67.3",
+            "requirements": [
+                {
+                    "raw": "tqdm==4.67.3",
+                    "extras": [],
+                    "marker": null,
+                    "name": "tqdm",
+                    "specifier": "==4.67.3",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "traitlets": {
+            "name": "traitlets",
+            "version": "5.15.0",
+            "requirements": [
+                {
+                    "raw": "traitlets==5.15.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "traitlets",
+                    "specifier": "==5.15.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "truststore": {
+            "name": "truststore",
+            "version": "0.10.4",
+            "requirements": [
+                {
+                    "raw": "truststore==0.10.4",
+                    "extras": [],
+                    "marker": null,
+                    "name": "truststore",
+                    "specifier": "==0.10.4",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "typer": {
+            "name": "typer",
+            "version": "0.23.1",
+            "requirements": [
+                {
+                    "raw": "typer==0.23.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "typer",
+                    "specifier": "==0.23.1",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "typing-inspection": {
+            "name": "typing-inspection",
+            "version": "0.4.2",
+            "requirements": [
+                {
+                    "raw": "typing-inspection==0.4.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "typing-inspection",
+                    "specifier": "==0.4.2",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "typing-extensions": {
+            "name": "typing-extensions",
+            "version": "4.15.0",
+            "requirements": [
+                {
+                    "raw": "typing_extensions==4.15.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "typing_extensions",
+                    "specifier": "==4.15.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "urllib3": {
+            "name": "urllib3",
+            "version": "2.7.0",
+            "requirements": [
+                {
+                    "raw": "urllib3==2.7.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "urllib3",
+                    "specifier": "==2.7.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "uvicorn": {
+            "name": "uvicorn",
+            "version": "0.48.0",
+            "requirements": [
+                {
+                    "raw": "uvicorn==0.48.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "uvicorn",
+                    "specifier": "==0.48.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "wcmatch": {
+            "name": "wcmatch",
+            "version": "8.5.2",
+            "requirements": [
+                {
+                    "raw": "wcmatch==8.5.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "wcmatch",
+                    "specifier": "==8.5.2",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "wcwidth": {
+            "name": "wcwidth",
+            "version": "0.7.0",
+            "requirements": [
+                {
+                    "raw": "wcwidth==0.7.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "wcwidth",
+                    "specifier": "==0.7.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "wrapt": {
+            "name": "wrapt",
+            "version": "1.17.3",
+            "requirements": [
+                {
+                    "raw": "wrapt==1.17.3",
+                    "extras": [],
+                    "marker": null,
+                    "name": "wrapt",
+                    "specifier": "==1.17.3",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        },
+        "zipp": {
+            "name": "zipp",
+            "version": "4.1.0",
+            "requirements": [
+                {
+                    "raw": "zipp==4.1.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "zipp",
+                    "specifier": "==4.1.0",
+                    "url": null,
+                    "found": null
+                }
+            ]
+        }
+    },
+    "affected_packages": {},
+    "announcements": [],
+    "vulnerabilities": [],
+    "ignored_vulnerabilities": [],
+    "remediations": {},
+    "remediations_results": {
+        "vulnerabilities_fixed": [],
+        "remediations_applied": {},
+        "remediations_skipped": {}
+    }
+}
+
+
++===========================================================================================================================================================================================+
+
+
+DEPRECATED: this command (`check`) has been DEPRECATED, and will be unsupported beyond 01 June 2024.
+
+
+We highly encourage switching to the new `scan` command which is easier to use, more powerful, and can be set up to mimic the deprecated command if required.
+
+
++===========================================================================================================================================================================================+
+
+

@@ -1,0 +1,25 @@
+{
+  "ok": false,
+  "vulnerabilities": [
+    {
+      "id": "MAL-0001",
+      "package": "tensorflov",
+      "version": "0.1.0",
+      "severity": "critical",
+      "title": "Malicious typosquat exfiltrating PHI",
+      "description": "This package is a known malicious typosquat of TensorFlow.",
+      "from": [
+        "tensorflov@0.1.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "isPinnable": false
+    }
+  ],
+  "dependencyCount": 1,
+  "org": "local-simulated",
+  "projectName": "Healthcare-AI-Supply-Chain",
+  "path": "/workspaces/Secure-AI-Code-and-Libraries-/Module 3 Securing 3rd party Ai Libraries/Healthcare AI Supply Chain Breach Response",
+  "error": null
+}

@@ -1,35 +1,34 @@
 rules:
   - id: unsafe-pickle-load
-    pattern: pickle.load($ARG)
-    message: "pickle.load() without validation"
-    languages: [python]
+    message: "pickle.load() without validation — insecure deserialization can lead to remote code execution."
     severity: ERROR
+    languages: [python]
+    pattern: pickle.load($ARG)
 
   - id: unsafe-pickle-loads
-    pattern: pickle.loads($ARG)
-    message: "pickle.loads() on dynamic data"
-    languages: [python]
+    message: "pickle.loads() on dynamic data — unsafe deserialization of untrusted input."
     severity: ERROR
+    languages: [python]
+    pattern: pickle.loads($ARG)
 
   - id: pickle-load-user-controlled-path
+    message: "User-controlled path passed to pickle.load() — attacker can control file contents."
+    severity: ERROR
+    languages: [python]
     patterns:
       - pattern: pickle.load(open($PATH, ...))
       - metavariable-pattern:
           metavariable: $PATH
           pattern: $BASE + $USER_INPUT
-    message: "User-controlled path passed to pickle.load()"
-    languages: [python]
-    severity: ERROR
 
   - id: unsafe-joblib-load
-    pattern: joblib.load($ARG)
-    message: "joblib.load() uses pickle internally"
-    languages: [python]
+    message: "joblib.load() uses pickle internally — treat as unsafe without integrity checks."
     severity: WARNING
+    languages: [python]
+    pattern: joblib.load($ARG)
 
   - id: unsafe-keras-load-model
-    pattern: tf.keras.models.load_model($ARG)
-    message: "tf.keras.models.load_model() without integrity checks"
-    languages: [python]
+    message: "tf.keras.models.load_model() without integrity checks — model files can be tampered with."
     severity: WARNING
-
+    languages: [python]
+    pattern: tf.keras.models.load_model($ARG)

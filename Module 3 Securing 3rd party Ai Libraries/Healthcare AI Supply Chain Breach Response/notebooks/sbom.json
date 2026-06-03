@@ -1,0 +1,92 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-10-25T14:32:00Z",
+    "component": {
+      "type": "application",
+      "name": "MedAI-Diagnostic-Platform",
+      "version": "2.1.0"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "tensorflow",
+      "version": "2.13.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/tensorflow@2.13.0"
+    },
+    {
+      "type": "library",
+      "name": "scikit-learn",
+      "version": "1.3.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/scikit-learn@1.3.0"
+    },
+    {
+      "type": "library",
+      "name": "numpy",
+      "version": "1.24.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/numpy@1.24.3"
+    },
+    {
+      "type": "library",
+      "name": "Flask",
+      "version": "2.3.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/Flask@2.3.2"
+    },
+    {
+      "type": "library",
+      "name": "Werkzeug",
+      "version": "2.3.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/Werkzeug@2.3.6"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "MedAI-Diagnostic-Platform",
+      "dependsOn": [
+        "pkg:pypi/tensorflow@2.13.0",
+        "pkg:pypi/scikit-learn@1.3.0",
+        "pkg:pypi/numpy@1.24.3",
+        "pkg:pypi/Flask@2.3.2",
+        "pkg:pypi/Werkzeug@2.3.6"
+      ]
+    }
+  ]
+}

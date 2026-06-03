@@ -1,0 +1,91 @@
+
+rules:
+  - id: unsafe-pickle-load
+    pattern: pickle.load($ARG)
+    message: "Unsafe pickle deserialization detected. Pickle can execute arbitrary code. Use safer alternatives like joblib, ONNX, or SafeTensors."
+    languages: [python]
+    severity: ERROR
+    metadata:
+      category: security
+      cwe: "CWE-502: Deserialization of Untrusted Data"
+      confidence: HIGH
+      references:
+        - "https://owasp.org/www-community/vulnerabilities/Deserialization_of_untrusted_data"
+
+  - id: unsafe-pickle-with-user-input
+    patterns:
+      - pattern-inside: |
+          def $FUNC(..., $USER_INPUT, ...):
+            ...
+      - pattern: pickle.load(...)
+    message: "Critical: pickle.load() with user-controlled input. This allows remote code execution."
+    languages: [python]
+    severity: ERROR
+    metadata:
+      category: security
+      cwe: "CWE-502"
+      confidence: HIGH
+
+  - id: unsafe-torch-load
+    patterns:
+      - pattern: torch.load($PATH, ...)
+      - pattern-not: torch.load($PATH, ..., weights_only=True, ...)
+    message: "Unsafe torch.load() without weights_only=True. This can execute arbitrary code. Use torch.load(path, weights_only=True)"
+    languages: [python]
+    severity: WARNING
+    metadata:
+      category: security
+      cwe: "CWE-502"
+      references:
+        - "https://pytorch.org/docs/stable/generated/torch.load.html"
+
+  - id: hardcoded-api-key
+    patterns:
+      - pattern-either:
+          - pattern: $VAR = "sk-..."
+          - pattern: $VAR = "api_key_..."
+          - pattern: $VAR = "sk_..."
+      - metavariable-regex:
+          metavariable: $VAR
+          regex: (?i)(key|token|secret|password|api)
+    message: "Hardcoded API key detected. Store credentials in environment variables or use a secrets manager."
+    languages: [python]
+    severity: ERROR
+    metadata:
+      category: security
+      cwe: "CWE-798: Use of Hard-coded Credentials"
+      confidence: HIGH
+
+  - id: path-traversal-in-model-loading
+    patterns:
+      - pattern-inside: |
+          def $FUNC(..., $USER_INPUT, ...):
+            ...
+      - pattern-either:
+          - pattern: open($USER_INPUT, ...)
+          - pattern: open(f"...{$USER_INPUT}...", ...)
+      - pattern-not-inside: |
+          if $USER_INPUT in $WHITELIST:
+            ...
+    message: "Potential path traversal vulnerability. User input used in file path without validation."
+    languages: [python]
+    severity: ERROR
+    metadata:
+      category: security
+      cwe: "CWE-22: Path Traversal"
+
+  - id: missing-data-validation
+    patterns:
+      - pattern: $DATA = pd.read_csv($PATH)
+      - pattern-not-inside: |
+          if os.path.exists($PATH):
+            ...
+      - pattern-not-inside: |
+          if $DATA.shape[0] > $N:
+            ...
+    message: "CSV data loaded without validation. Add file existence checks, size limits, and schema validation."
+    languages: [python]
+    severity: WARNING
+    metadata:
+      category: security
+      best-practice: "Always validate data sources"
