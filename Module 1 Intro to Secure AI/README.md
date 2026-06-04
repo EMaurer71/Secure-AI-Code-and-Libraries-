@@ -1,26 +1,7 @@
 Module 1 — Intro to Secure AI Development
-It covers:
 
-The two class demonstration notebooks
+This module contains my reconstructed and expanded work for Module 1 of the Coursera course “Secure AI Code & Libraries with Static Analysis.” 
 
-The malicious model example
-
-The static analysis demo
-
-The full Hands‑On Lab
-
-Your added GitHub Actions workflow demonstration
-
-The recreated deliverables
-
-Everything is written to match the tone and structure of your other module READMEs.
-
-You can drop this directly into:
-
-Code
-Module 1 Intro to Secure AI Development/README.md
-Module 1 — Intro to Secure AI Development
-This module contains my reconstructed and expanded work for Module 1 of the Coursera course “Secure AI Code & Libraries with Static Analysis.”  
 It includes the two class demonstration notebooks, the malicious model example, and the full hands‑on lab, which I rebuilt and enhanced due to missing instructions and incomplete artifacts in the original course materials.
 
 This module now provides a complete, engineering‑ready introduction to:
