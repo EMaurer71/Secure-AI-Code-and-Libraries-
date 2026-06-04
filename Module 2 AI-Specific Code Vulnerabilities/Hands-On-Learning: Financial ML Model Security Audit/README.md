@@ -1,81 +1,134 @@
-# Final Project — CryptoTrade Pro Security Audit
+README #2 — Lab: Financial ML Model Security Audit
+Location:
+Hands-On-Learning: Financial ML Model Security Audit/README.md
 
-This folder contains the full CryptoTrade Pro security audit and remediation project.  
-This is the final graded lab for the course.
-The src folder contains Ai recreted files that should complete the lab as the originals are nto avialble for download.
-If that is what you need, feel free to copy those files.
+Financial ML Model Security Audit — Hands‑On Lab
+This folder contains the fully reconstructed and enhanced hands‑on lab for Module 2 of the Coursera course “Secure AI Code & Libraries with Static Analysis.”
 
-## Purpose
-Perform a complete AI/ML security audit of a breached trading platform, including:
+In this scenario, you perform a security audit of a financial machine learning pipeline, using static analysis tools, custom Semgrep rules, and CI automation.
 
-- Identifying ML-specific vulnerabilities
-- Detecting unsafe deserialization (pickle, joblib)
-- Detecting insecure TensorFlow model loading
-- Detecting hardcoded secrets
-- Detecting OS command injection
-- Scanning notebooks for insecure patterns
-- Writing custom Semgrep rules
-- Implementing secure remediations
-- Verifying fixes with Bandit and Semgrep
+The original lab shipped with incomplete instructions and missing files.
+I rebuilt the entire environment, added missing components, and created a full GitHub Actions demonstration.
 
-## Folder Structure
+📘 Included Notebooks
+1. crypto_audit.ipynb
+A full walkthrough of:
 
-module2_cryptotrade_pro/
-│
-├── crypto_audit.ipynb        # Main audit notebook (findings)
-├── remediation.ipynb         # Remediation notebook (fixes)
-│
-├── notebooks/
-│   └── data_pipeline.ipynb   # Vulnerable notebook
-│
-├── src/
-│   ├── model_management.py           # Vulnerable model loader
-│   ├── model_management_fixed.py     # Secure version
-│   ├── data_pipeline_fixed.py        # Secure pipeline
-│   ├── trading_pipeline.py
-│   └── model_loader.py
-│
-├── rules/
-│   ├── pickle-vuln.yaml
-│   ├── hardcoded-secrets.yaml
-│   └── command-injection.yaml
-│
-└── trades/
-└── data.csv
+Running Bandit, Semgrep, PyLint, and Safety
 
-Code
+Identifying ML‑specific vulnerabilities
 
-## How to Run the Audit
+Reviewing model management and trading pipelines
 
-Activate your venv, then:
+Documenting findings and severity
 
-cd module2_cryptotrade_pro
-jupyter notebook crypto_audit.ipynb
+2. remediation.ipynb
+Maps each vulnerability to:
 
-Code
+Severity
 
-This notebook will:
-- Run Bandit
-- Run Semgrep
-- Load JSON results
-- Generate severity/CWE/file breakdowns
-- Auto-number findings (F-01 → F-XX)
-- Export a Markdown report
+Impact
 
-## How to Run the Remediation
+CWE category
 
-jupyter notebook remediation.ipynb
+Recommended fix
 
-Code
+3. deliverables.ipynb
+Generates the final:
 
-This notebook will:
-- Load fixed code
-- Run Bandit + Semgrep again
-- Compare before vs after
-- Produce a remediation summary
+Security report
 
-## Deliverables
-- Audit notebook (`crypto_audit.ipynb`)
-- Remediation notebook (`remediation.ipynb`)
-- Semgrep rules (`rules/*.yaml`)
-- Fixed code (`src/*_fixed.py`)
+Remediation matrix
+
+Supporting evidence
+
+4. GitHub Actions Security Demo
+Shows how the CI pipeline runs:
+
+Bandit
+
+Semgrep (custom rules)
+
+PyLint
+
+Safety
+
+Artifact uploads
+
+📁 Custom Semgrep Rules
+Folder: rules/
+
+command-injection.yaml
+
+hardcoded-secrets.yaml
+
+pickle-vuln.yaml
+
+These rules detect AI‑specific vulnerabilities not covered by default Semgrep packs.
+
+📁 Source Code
+Folder: src/
+
+Includes the intentionally vulnerable ML pipeline:
+
+data_pipeline.ipynb
+
+data_pipeline_fixed.py
+
+model_loader.py
+
+model_management.py
+
+model_management_fixed.py
+
+trading_pipeline.py
+
+And sample trading data:
+
+trades/data.csv
+
+📁 GitHub Actions Workflow
+Folder: .github/workflows/
+
+security_scan.yaml  
+Runs all static analysis tools and uploads reports.
+
+📁 Security Reports
+Folder: security-reports/
+
+Contains raw outputs from:
+
+Bandit
+
+Semgrep
+
+PyLint
+
+Safety
+
+These feed into the final deliverables.
+
+📁 Shell Scripts
+Folder: shell_scripts/
+
+run_all_scans.sh
+
+export_reports.sh
+
+These automate local scanning and report generation.
+
+🧠 Why This Lab Matters
+This is the most advanced lab in Module 2.
+It teaches you how to:
+
+Audit ML pipelines
+
+Detect AI‑specific vulnerabilities
+
+Build custom static analysis rules
+
+Automate security scanning in CI
+
+Produce professional security reports
+
+This lab mirrors real‑world AI security engineering workflows.
