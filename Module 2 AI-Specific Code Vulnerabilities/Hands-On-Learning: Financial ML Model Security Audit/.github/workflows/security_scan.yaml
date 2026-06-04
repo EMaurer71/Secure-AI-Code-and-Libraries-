@@ -1,0 +1,1 @@
+semgrep --config ./rules --json -o reports/semgrep_ci.json
