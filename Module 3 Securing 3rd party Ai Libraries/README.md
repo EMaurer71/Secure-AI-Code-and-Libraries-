@@ -1,14 +1,10 @@
-README #1 — Module 3: Securing 3rd‑Party AI Libraries
-Location:
-Module 3 Securing 3rd party Ai Libraries/README.md
-
 Module 3 — Securing 3rd‑Party AI Libraries
 This module contains my reconstructed and expanded work for Module 3 of the Coursera course “Secure AI Code & Libraries with Static Analysis.”  
 The focus of this module is understanding and mitigating risks introduced by third‑party AI/ML libraries, including:
 
 Vulnerable dependencies
 
-Unsafe model loading utilities
+Unsafe model utilities
 
 Supply‑chain attacks
 
@@ -18,7 +14,9 @@ SBOM generation and analysis
 
 CI/CD security gates for ML pipelines
 
-Module 3 includes two classroom demonstrations and two hands‑on labs, all rebuilt and enhanced to be fully runnable and portfolio‑ready.
+Organizational policy enforcement
+
+Module 3 includes three classroom demonstrations and two hands‑on labs, all rebuilt and enhanced to be fully runnable and portfolio‑ready.
 
 📘 Classroom Demo 1 — Third‑Party Library Risks in AI
 Folder:
@@ -32,20 +30,12 @@ Model loader risks
 
 Unsafe serialization
 
-**Organizational policy enforcement****
-
 Library approval workflows
+
+Organizational policy enforcement
 
 Notebook:
 module_3_third_party_library_risks.ipynb
-
-Supporting files include:
-
-approval_policy.json
-
-organizational_policy.md
-
-Multiple requirements files for PyTorch, TensorFlow, and scikit‑learn
 
 📙 Classroom Demo 2 — Tools for Dependency & License Analysis
 Folder:
@@ -70,15 +60,24 @@ CycloneDX SBOM generation
 Notebook:
 module_3_tools_dependency_license_analysis.ipynb
 
-Includes:
+📗 Classroom Demo 3 — Best Practices for AI Supply Chain Security
+Folder:
+Best Practices For AI Supply Chain Security/
 
-Vulnerable requirements file
+This demo introduces:
 
-SBOM example
+AI supply‑chain attack surfaces
+
+SBOM‑driven monitoring
+
+Dependency policy enforcement
 
 Security gate configuration
 
-Before/after scan reports
+Safe model loading patterns
+
+Notebook:
+AI_Supply_Chain_demo.ipynb
 
 🧪 Lab 1 — Project Secure Healthcare ML Pipeline
 Folder:
@@ -134,11 +133,11 @@ This module teaches you how to:
 
 Detect vulnerable dependencies
 
-Enforce organizational policies
-
-Generate and analyze SBOMs
+Enforce security policies
 
 Build CI/CD security gates
+
+Generate and analyze SBOMs
 
 Respond to supply‑chain breaches
 
