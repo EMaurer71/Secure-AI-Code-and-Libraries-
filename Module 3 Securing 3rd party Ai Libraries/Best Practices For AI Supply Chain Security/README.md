@@ -1,142 +1,133 @@
+✅ README — Best Practices for AI Supply Chain Security
+Location:
+Best Practices For AI Supply Chain Security/README.md
+
 Best Practices for AI Supply Chain Security
-Module 3 — Secure AI Code & Libraries with Static Analysis
-This module demonstrates end‑to‑end AI supply chain security using real-world practices adopted by modern ML/AI engineering teams. It includes:
+This folder contains the third classroom demonstration for Module 3 — Securing 3rd‑Party AI Libraries.
+It introduces the best practices required to secure AI/ML supply chains, including:
 
-Deterministic builds with lock files
+Dependency risk management
 
-SBOM generation (CycloneDX)
+SBOM generation and monitoring
 
-Dependency approval workflows
+Organizational policy enforcement
 
-Automated CI/CD security gates
+Secure model loading
 
-Organizational governance for ML supply chain security
+CI/CD security gates
 
-This repository contains a polished Jupyter notebook implementing all five best practices in a clean, reproducible format.
+Continuous dependency monitoring
 
-🔐 1. Overview
-Modern AI systems depend on dozens of third‑party libraries. Without proper controls, these dependencies introduce risks:
+This demo was reconstructed and expanded to include missing logic, clearer examples, and runnable code.
 
-Vulnerabilities (CVEs)
+📘 Notebook Included
+AI Supply Chain Security Demo
+File: AI_Supply_Chain_demo.ipynb
 
-Malicious packages (typosquatting)
+This notebook walks through:
 
-License conflicts
+🔍 1. Understanding AI Supply Chain Risks
+Vulnerable dependencies
 
-Version drift
+Malicious packages
 
-Supply chain attacks
+Unsafe model utilities
 
-This module shows how to secure the entire ML dependency lifecycle using industry‑standard tools and policies.
+Transitive dependency risks
 
-📁 2. Repository Contents
-File	Purpose
-Best_Practices_Supply_Chain.ipynb	Main notebook implementing all 5 practices
-requirements.in	High‑level dependency input file
-requirements.lock	Fully pinned lock file (41 packages)
-sbom.json	CycloneDX SBOM for the ML pipeline
-approval_policy.json	Dependency approval workflow rules
-security_gate_config.json	CI/CD security gate configuration
-organizational_policy.md	Full ML supply chain security policy
+Model provenance issues
 
+📦 2. SBOM‑Driven Security
+Using:
 
-🧩 3. What the Notebook Covers
-Practice 1 — Lock Files for Deterministic Builds
-Uses pip-compile to generate a pinned requirements.lock
+sbom.json
 
-Ensures reproducible builds across all environments
+requirements.in
 
-Adds hash verification (--require-hashes)
+requirements.lock
 
-Produces a dependency tree with 41 packages
+You learn how to:
 
-Practice 2 — Software Bill of Materials (SBOM)
-Generates a CycloneDX 1.4 SBOM (sbom.json)
+Generate SBOMs
 
-Includes component metadata, versions, purls, licenses, hashes
+Compare dependency versions
 
-Enables fast CVE impact analysis
+Detect drift
 
-Supports compliance (HIPAA, FDA, NTIA minimum elements)
+Identify unapproved libraries
 
-Practice 3 — Dependency Approval Workflows
-Defines rules for:
+📜 3. Organizational Policy Enforcement
+Using:
 
-ML frameworks (torch, tensorflow, jax)
+approval_policy.json
 
-Restrictive licenses (GPL/AGPL)
+organizational_policy.md
 
-New/unknown publishers
+You evaluate whether dependencies are:
 
-High‑risk categories (crypto, network, subprocess)
+Approved
 
-Includes SLAs and reviewer responsibilities
+Restricted
 
-Practice 4 — Automated Security Gates
-CI/CD pipeline enforces:
+Blocked
 
-pip-audit + Safety vulnerability scanning
+🛡 4. Security Gate Configuration
+Using:
 
-License compliance (pip-licenses)
+security_gate_config.json
 
-Dependency approval checks
+You learn how to build:
 
-SBOM generation
+CI/CD dependency gates
 
-Blocks merges on CRITICAL/HIGH vulnerabilities
+License compliance checks
 
-Practice 5 — Organizational Policies
-Full ML supply chain governance:
+Vulnerability thresholds
 
-Lock files required
+Automated fail conditions
 
-SBOMs required for every release
+🧪 5. Safe Model Loading
+The demo includes:
 
-Vulnerability SLAs (24h/7d/30d/90d)
+load_model_safe.py
 
-Quarterly audits
+A compiled version for demonstration
 
-Roles & responsibilities
+You learn how to avoid:
 
-🛠️ 4. Tools Used
-pip-tools — lock file generation
+Unsafe deserialization
 
-CycloneDX — SBOM generation
+Arbitrary code execution
 
-pip-audit — vulnerability scanning
+Insecure model formats
 
-Safety — extended CVE scanning
+📁 Supporting Files
+approval_policy.json
 
-pip-licenses — license compliance
+organizational_policy.md
 
-Python 3.9+
-
-🚀 5. How to Use This Notebook
-Open the notebook in Jupyter or VS Code
-
-Run each section sequentially
-
-Generated artifacts will appear in the working directory:
+requirements.in
 
 requirements.lock
 
 sbom.json
 
-approval_policy.json
-
 security_gate_config.json
 
-organizational_policy.md
+load_model_safe.py
 
-These files can be used as templates for real ML projects.
+🧠 Why This Demo Matters
+AI supply‑chain attacks are increasingly common and often catastrophic.
+This demo teaches you how to:
 
-🧠 6. Why This Matters
-AI supply chain security is now a regulatory requirement in healthcare, finance, and government. This module demonstrates:
+Build secure dependency workflows
 
-How to prevent dependency‑based attacks
+Enforce organizational policies
 
-How to enforce security automatically
+Use SBOMs for continuous monitoring
 
-How to maintain compliance with SBOM‑based workflows
+Configure CI/CD security gates
 
-How to build reproducible, auditable ML systems
+Load models safely and securely
+
+It prepares you for the two Module 3 hands‑on labs.
